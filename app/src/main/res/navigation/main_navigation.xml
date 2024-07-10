@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.pawrents.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_allPetsFragment"
+            app:destination="@id/allPetsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.android.pawrents.ui.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_approvedAdoptFragment"
+            app:destination="@id/approvedAdoptFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_ownPetDetailFragment"
+            app:destination="@id/ownPetDetailFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.android.pawrents.ui.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.android.pawrents.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.android.pawrents.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_allPetsFragment"
+            app:destination="@id/allPetsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allPetsFragment"
+        android:name="com.android.pawrents.ui.pets.AllPetsFragment"
+        android:label="fragment_all_pets"
+        tools:layout="@layout/fragment_all_pets" >
+        <argument
+            android:name="isSearchMode"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_allPetsFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/petDetailFragment"
+        android:name="com.android.pawrents.ui.pets.PetDetailFragment"
+        android:label="fragment_pet_detail"
+        tools:layout="@layout/fragment_pet_detail" >
+        <argument
+            android:name="petsToBeShown"
+            app:argType="com.android.pawrents.data.model.Pet" />
+        <action
+            android:id="@+id/action_petDetailFragment_to_adoptionFormFragment"
+            app:destination="@id/adoptionFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adoptionFormFragment"
+        android:name="com.android.pawrents.ui.pets.AdoptionFormFragment"
+        android:label="fragment_adoption_form"
+        tools:layout="@layout/fragment_adoption_form" >
+        <argument
+            android:name="petToAdopt"
+            app:argType="com.android.pawrents.data.model.Pet" />
+    </fragment>
+    <fragment
+        android:id="@+id/approvedAdoptFragment"
+        android:name="com.android.pawrents.ui.history.ApprovedAdoptFragment"
+        android:label="fragment_approved_adopt"
+        tools:layout="@layout/fragment_approved_adopt" >
+        <argument
+            android:name="currentPet"
+            app:argType="com.android.pawrents.data.model.Pet" />
+        <argument
+            android:name="currentAdoption"
+            app:argType="com.android.pawrents.data.model.Adoption" />
+    </fragment>
+    <fragment
+        android:id="@+id/ownPetDetailFragment"
+        android:name="com.android.pawrents.ui.history.OwnPetDetailFragment"
+        android:label="fragment_own_pet_detail"
+        tools:layout="@layout/fragment_own_pet_detail" >
+        <argument
+            android:name="currentPet"
+            app:argType="com.android.pawrents.data.model.Pet" />
+        <action
+            android:id="@+id/action_ownPetDetailFragment_to_userResponseFragment"
+            app:destination="@id/userResponseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.android.pawrents.ui.history.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <argument
+            android:name="currentPet"
+            app:argType="com.android.pawrents.data.model.Pet" />
+    </fragment>
+    <fragment
+        android:id="@+id/userResponseFragment"
+        android:name="com.android.pawrents.ui.history.UserResponseFragment"
+        android:label="fragment_user_response"
+        tools:layout="@layout/fragment_user_response" >
+        <argument
+            android:name="currentPet"
+            app:argType="com.android.pawrents.data.model.Pet" />
+        <argument
+            android:name="currentAdoption"
+            app:argType="com.android.pawrents.data.model.Adoption" />
+        <argument
+            android:name="candidateUser"
+            app:argType="com.android.pawrents.data.model.User" />
+    </fragment>
+</navigation>

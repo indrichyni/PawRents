@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">PawRents</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="opening_words">Where Every Pet Find\nTheir Fur-ever Family</string>
+    <string name="opening_desc">Let’s see their profile to know them better\nGet a perfect pet and make them your family</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">Skip</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_your_password_again">Enter Your Password Again</string>
+    <string name="do_you_have_any_accout">Do you Have Any Accout?</string>
+    <string name="sign_in_underlined"><u>Sign In</u></string>
+    <string name="sign_up_underlined"><u>Sign Up</u></string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don’t Have an Account?</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="loading">Loading...</string>
+    <string name="field_cant_be_empty_error">Field cant be empty</string>
+    <string name="email_must_valid">Enter a valid email</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="add_adopt">add adopt</string>
+    <string name="publish_your_pet">Publish Your Pet</string>
+    <string name="header_adopt_one">Got too many pets at your home? or found an unowned pet?</string>
+    <string name="let_s_find_adopter_who_love_having_pet_around_them">Let’s find adopter who love having pet around them!</string>
+    <string name="pet_images">Pet Images</string>
+    <string name="upload_your_pet_images">Upload Your Pet Images</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="enter_your_pet_name">Enter Your Pet Name</string>
+    <string name="pet_categories">Pet Categories</string>
+    <string name="location">Location</string>
+    <string name="enter_your_location">Enter Your Location</string>
+    <string name="pet_age">Pet Age</string>
+    <string name="weight">Weight</string>
+    <string name="breed">Breed</string>
+    <string name="enter_your_pet_breed">Enter Your Pet Breed</string>
+    <string name="color">Color</string>
+    <string name="enter_your_pet_color">Enter Your Pet Color</string>
+    <string name="description">Description</string>
+    <string name="enter_the_description_of_your_pet">Enter the Description of Your Pet</string>
+    <string name="color_">Color:</string>
+    <string name="location_">Location:</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="fill_out_the_adoption_form">Fill Out The Adoption Form</string>
+    <string name="finally_adopted_desc">Finally!! Are you sure to adopt the pet?\nIf you sure, you have meet the pet and the owner.\nPlease click the button below!</string>
+    <string name="edit_pet">Edit Pet</string>
+    <string name="edit_your_pet">Edit Your Pet</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="categories_array">
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Bird</item>
+        <item>Rabbit</item>
+        <item>Hamster</item>
+    </string-array>
+
+    <string-array name="vacchine_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

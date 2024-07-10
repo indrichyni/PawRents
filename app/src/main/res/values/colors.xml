@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="deep_blue">#395A7F</color>
+    <color name="blue">#6E9FC1</color>
+    <color name="sky_blue">#A3CAE9</color>
+    <color name="gray">#E9ECEE</color>
+    <color name="deep_gray">#ACACAC</color>
+    <color name="sky_blue_two">#B6D8EE</color>
+    <color name="deep_blue_two">#39597E</color>
+    <color name="blue_two">#6E9FC0</color>
+    <color name="gray_two">#C4C4C4</color>
+    <color name="sky_blue_three">#EFF8FF</color>
+    <color name="blue_trans_70">#d9e9f6</color>
+    <color name="dark_gray">#5e6164</color>
+    <color name="sky_blue_detail">#bed9f0</color>
+    <color name="blue_detail">#87b0cb</color>
+    <color name="blue_two_detail">#6e9fc0</color>
+    <color name="new_gray">#A2AFB8</color>
+    <color name="dark_gray_two">#5D6164</color>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "164555266380",
+    "project_id": "pawrents-41987",
+    "storage_bucket": "pawrents-41987.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164555266380:android:dccf06e04190774f6c97e9",
+        "android_client_info": {
+          "package_name": "com.android.pawrents"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ez1shGLkRZeGCmN_v_aa81wTywhmUAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
